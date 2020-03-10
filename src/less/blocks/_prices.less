@@ -1,0 +1,144 @@
+.prices {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 137px;
+  background-color: @color-bg-white;
+
+
+  &__content {
+    .wrapper();
+  }
+
+  &__header {
+    text-align: center;
+
+    h2 {
+      font-family: "Lato";
+      font-size: 38px;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.95px;
+      color: @color-grey;
+    }
+
+    p {
+      max-width: 681px;
+      margin: 0 auto;
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 0.38px;
+      color: @color-grey;
+
+    }
+  }
+
+  &__cards {
+    .row-flex();
+    margin-top: 60px;
+
+    .card {
+      .col();
+      .size(3);
+      .size-md(6);
+      .size-sm(12);
+      height: 450px;
+      min-width: 260px;
+      margin-top: 30px;
+      background-color: @color-white;
+      box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.75);
+
+      &:hover .card__price {
+        background-color: @color-red;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 150px;
+        background-color: @color-grey;
+        transition: .3s;
+
+        .price {
+          width: 100%;
+          margin-top: 25px;
+          font-family: "Lato";
+          font-size: 50px;
+          font-weight: 700;
+          letter-spacing: 1.25px;
+          color: @color-bg-white;
+
+          span {
+            font-size: 20px;
+            letter-spacing: 0.5px;
+          }
+        }
+
+        .term {
+          font-family: "Lato";
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 0.38px;
+          color: @color-bg-white;
+        }
+      }
+
+      &__description {
+        text-align: center;
+
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          height: 50px;
+          border-radius: 25px;
+          margin-top: -25px;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: "Lato";
+          font-size: 15px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.38px;
+          color: @color-grey;
+          background-color: @color-bg-white;
+
+        }
+
+        .list {
+          margin: 25px 0;
+          font-family: "Lato";
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 38px;
+          letter-spacing: 0.38px;
+          color: @color-grey;
+        }
+
+        .btn {
+          padding: 16px 62px;
+          box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.75);
+
+          &:hover {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .prices {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

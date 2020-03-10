@@ -1,0 +1,69 @@
+.join {
+  width: 100%;
+  padding: 80px 0;
+  background-color: @color-red;
+
+
+  &__content {
+    .wrapper();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h2 {
+      font-family: "Lato";
+      font-size: 38px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.95px;
+      color: @color-white;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .btn {
+      padding: 15px 60px;
+      color: @color-red;
+      background-color: @color-white;
+      box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.60);
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  .join {
+    padding: 30px 0;
+
+    &__content {
+      text-align: center;
+
+      .btn {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .join {
+
+
+    &__content {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}

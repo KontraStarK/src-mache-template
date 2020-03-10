@@ -1,0 +1,78 @@
+.services {
+  .wrapper();
+  padding-top: 151px;
+  padding-bottom: 120px;
+
+  &__header {
+    max-width: 681px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-family: "Lato";
+      font-size: 38px;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.95px;
+      color: @color-grey;
+    }
+
+    p {
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 0.35px;
+      color: @color-grey;
+    }
+  }
+
+  &__content {
+    .row-flex();
+    align-items: center;
+    margin-top: 50px;
+
+    .content-block {
+      .col();
+      .size(3);
+      .size-md(6);
+      .size-sm(12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 160px;
+
+      .block-img {
+        display: flex;
+        width: 130px;
+        height: 130px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border: 1px solid #c4c4c4;
+        border-radius: 50%;
+
+        img {
+          margin: auto;
+        }
+      }
+
+      h3 {
+        font-family: "Lato";
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.38px;
+        color: @color-red;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+}

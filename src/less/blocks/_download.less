@@ -1,0 +1,66 @@
+.download {
+  width: 100%;
+  padding: 75px 30px;
+  background-color: @color-bg-white;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__header {
+    max-width: 488px;
+    margin-left: 50px;
+    margin-top: 60px;
+
+    h2 {
+      font-family: "Lato";
+      font-style: italic;
+      font-size: 38px;
+      font-weight: 400;
+      letter-spacing: 0.95px;
+      color: @color-grey;
+    }
+
+    p {
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 0.38px;
+      color: @color-grey;
+    }
+
+    .btn {
+      margin-top: 65px;
+      padding: 15px 35px;
+      box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.60);
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .download {
+    &__header {
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .download {
+    padding: 50px 15px;
+    text-align: center;
+  }
+}
